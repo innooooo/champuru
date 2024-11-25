@@ -1,39 +1,50 @@
-*{
-    padding: 2px;
-}
-.container {
-    min-height: 50vh;
-  }
-  .image {
-    perspective: 3000px;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-    transform-style: preserve-3d;
-  }
-  .image img {
-    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
-    box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
-    transition: all .4s;
-    transform-style: preserve-3d;
-  }
-  .image:hover img {
-    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
-  }
-#hdr{
-    display: flex;
-    flex-direction: row;
-}
 .trailer{
     display: flex;
 }
 #avatardiv{
     display: flex;
+    padding: 10px;
 }
 .avatars{
     width: 33.3%;
     border-radius: 20px;
 }
+.avatars:hover{
+  animation: reveal 0.7s ease;
+}
+
+@keyframes reveal{
+  0%{
+    transform: scale(1);
+    opacity: 60%;
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.links{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.links:hover{
+  animation: reveal 0.7s;
+}
+.header{
+  background-image: url('./images/MainPoster.jpg');
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.footer{
+  background: linear-gradient(black, darkred);
+  color: #fff;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+@font-face { font-family: Akira; src: url('./j-jiayou-akira-font/JiayouAkira-MAVEY.otf'); } 

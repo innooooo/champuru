@@ -3,22 +3,29 @@
     <head>
         <meta charset="utf-8">
         <title>Samurai Champuru</title>
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="author" content="Innocent Koge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Samurai Champloo" content="A Timeless Blend of Tradition and Modernality">
+        <link rel="shortcut icon" href="./images/MainPoster.jpg" />
         <link rel="stylesheet" type="text/css" href="./style.css">
         <script></script>
     </head>
     <body>
-        <h1>SAMURAI CHAMPURU</h1>
-        <header id="hdr">
-            <div class="container">
-                <div class="image">
-                    <img style="width: 600px;" src="./images/MainPoster.jpg" class="img" alt="A Fusion of Hip-Hop and Edo-Era Japan">
-                </div>
+        <header class="header">
+            <nav style="position: absolute; top: 20px; left: 32%; display: flex; gap: 20px;">
+              <a class="links" href="#home" >Home</a>
+              <a class="links" href="#characters" >Characters</a>
+              <a class="links" href="#episodes" >Episodes</a>
+              <a class="links" href="#soundtrack" >Soundtracks</a>
+              <a class="links" href="#gallery" >Gallery</a>
+            </nav>
+            <div style="position: relative; z-index: 2; text-align: center; top: 50%; transform: translateY(-50%);">
+              <h1 style="font-size: 4em; margin: 0;font-family: Akira;">Samurai Champloo</h1>
+              <p style="font-size: 1.5em; font-style: italic;">"The Fusion of Edo and Hip-Hop"</p>
+              <button style="margin-top: 20px; padding: 10px 20px; font-size: 1em; background: #ff4500; border: none; color: white; cursor: pointer;">Start Exploring</button>
             </div>
-            <div>
-                <article>Welcome to our tribute page for Samurai Champloo, the iconic anime that fuses Edo-era samurai culture with modern hip-hop aesthetics. This single-page experience invites fans and newcomers alike to explore the world of Mugen, Jin, and Fuu as they journey through a visually stunning and musically dynamic adventure.</article>
-            </div>
-        </header>
+          </header>
         <br>
         <main>
             <h1>HERO SECTION</h1>
@@ -35,10 +42,43 @@
                 </div>
             </div>  
         </main>
-        <footer>
-            <section>Credits to <a href="https://alphacoders.com/samurai-champloo-wallpapers">W samurai-champloo-wallpapers</a></section>
-
-        </footer>
-
+        <br>
+        <footer class="footer">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+              <div style="flex: 1; margin: 10px;">
+                <h3 style="margin-bottom: 10px;">About Samurai Champloo</h3>
+                <p style="line-height: 1.6;">
+                  Samurai Champloo is a masterpiece blending Edo-era samurai drama with modern hip-hop vibes. A tribute to Nujabes and the brilliant creators behind this iconic series.
+                </p>
+              </div>
+          
+              <div style="flex: 1; margin: 10px; text-align: center;">
+                <h3 style="margin-bottom: 10px;">Quick Links</h3>
+                <a href="#home" class="links">Home</a>
+                <a href="#characters" class="links">Characters</a>
+                <a href="#episodes" class="links">Episodes</a>
+                <a href="#soundtrack" class="links">Soundtrack</a>
+                <a href="#gallery" class="links">Gallery</a>
+              </div>
+          
+              <div style="flex: 1; margin: 10px; text-align: right;">
+                <h3 style="margin-bottom: 10px;">Contact</h3>
+                <p>Email: <a href="mailto:samuraichamploofansite@example.com" style="color: #ff4500;">innocentkaruru16@gmail.com</a></p>
+                <div style="margin-top: 10px;">
+                  <a href="https://twitter.com" target="_blank" style="color: #fff;">Twitter</a>
+                  <a href="https://instagram.com" target="_blank" style="color: #fff;">Instagram</a>
+                  <a href="https://youtube.com" target="_blank" style="color: #fff;">YouTube</a>
+                </div>
+              </div>
+            </div>
+          
+            <div style="text-align: center; margin-top: 20px; font-size: 0.9em; border-top: 1px solid #444; padding-top: 10px;">
+              <p>This site is a fan creation and is not affiliated with the original creators or studios. All rights belong to their respective owners.</p>
+              <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" 
+                      style="background: #ff4500; color: #fff; border: none; border-radius: 50%; padding: 10px 15px; cursor: pointer; margin-top: 10px;">
+                ↑ Top
+              </button>
+            </div>
+          </footer>
     </body>
 </html>
